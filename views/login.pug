@@ -1,0 +1,15 @@
+extends partials/header
+
+block content
+    h1 Login Page
+    form(method='POST' action='/login')
+        div
+            h2 Please Enter Your UserName
+            input#username(type='text' name='username')
+        div
+            h2 Please Enter Your Password
+            input#username(type='password' name='password')
+        div
+            button(type='submit' value='login') Login
+
+    include partials/footer
